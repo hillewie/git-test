@@ -11,6 +11,7 @@
    
     <header class="header-contact">
         <nav>
+            <img id="logo" src="bilder/logo.png" alt="logga">
             <ul>
                 <li ><a href="index.html">Hem</a></li>
                 <li><a href="about.html">Om mig</a></li>
@@ -22,48 +23,73 @@
    
     <main class="main-contact">
 
-        <section class="boxes">
+        <section class="cards">
             <article class="card-one-contact">
-                <iframe id="inlineFrameExample" title="Inline Frame Example"
+                <iframe class="inlineFrameExample" title="Inline Frame Example"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5244.366943060586!2d17.93554832918204!3d59.4037379706853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9eed2f41ec5f%3A0x212bd3d80316105f!2sIsafjordsgatan%2030A%2C%20164%2040%20Kista!5e0!3m2!1sen!2sse!4v1599041101971!5m2!1sen!2sse" frameborder="0"></iframe>
-                </iframe>
             </article>
             
-
             <article class="card-two-contact">
-                <h2>Kontakta oss</h2>
+                <fieldset id="contact-info">
+                    <h2>Kontakta oss</h2>
+                    <div class="icon">
+                        <img src="bilder/tel-icon.png" alt="tel icon">
+                            <ul>
+                                <li><h3>0771 00 00 00</h3></li>
+                            </ul>
+                    </div>
+                    <div class="icon">
+                        <img src="bilder/mail-icon.png" alt="mail bild">
+                            <ul>
+                                <li><h3>hillewie.dahlin@live.se</h3></li>
+                            </ul>
+                    </div>
+                    <div class="icon">
+                        <img src="bilder/adress-icon.png" alt="adress icon">
+                            <ul>
+                                <li><h3>Isafjordsgatan 30A</h3></li>
+                            </ul>
+                    </div>
+                </fieldset>
+               
+            </article>
+
+            <article class="card-three-contact">
+                
                 <form action="/my-handling-form-page" method="post" class="form-contac">
                         <fieldset>
-                        <label for="name">Förnamn:</label><br>
-                       <input type="text" placeholder="Skriv ditt förnamn" id="name" name="user_name" required>
+                        <h2>Kontakta oss</h2>
+                        <label for="firstname">Förnamn:</label> <br>
+                       <input type="text" id="firstname" name="user_name" required>
                         <br>
-                       <label for="name">Efternamn:</label><br>
-                       <input type="text" placeholder="Skriv ditt efternamn" id="name" name="user_name" required>
+                       <label for="lastname">Efternamn:</label> <br>
+                       <input type="text" id="lastname" name="user_name" required>
                         <br>
-                       <label for="mail">E-mail:</label><br>
-                       <input type="email" placeholder="Skriv din mailadress" id="mail" name="user_email" required>
+                       <label for="mail">Mailadress:</label> <br>
+                       <input type="email" id="mail" name="user_email" required>
+                        <br>
                         <br>
                        <input type="radio" id="fraga" name="fraga" value="fraga" >
                        <label for="fraga">Frågor</label>
                        <input type="radio" id="order" name="order" value="order">
                        <label for="order">Beställning</label>
-                        
+                        <br>
+                        <br>
                        <label for="country">Välj land</label>
-                       <select name="country" id="country" re>
+                       <select name="country" id="country">
                            <option value="SE">Sverige</option>
                            <option value="NO">Norge</option>
                            <option value="DK">Danmark</option>
                            <option value="FI">Finland</option>
                        </select>
                        <br>
+                       <br>
                        <label for="msg">Meddelande:</label>
                        <textarea placeholder="Skriv ditt meddelande här..." id="msg" name="user_message"></textarea>
 
                         <button id="button" type="submit" value="submit">Skicka</button>
 
-                        </fieldset>
-                       
-                        
+                    </fieldset>     
 
                    </form>
             </article>
@@ -76,24 +102,22 @@
         <p>@copyright by Hillewie</p>
         
         <section class="footer-info">
-            <article class="footer-link">
+            <div class="footer-link">
                 <ul>
-                    <li><a href="index.html">Start</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="us.html">Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="about.html">Om mig</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
                 </ul>
-            </article>
+            </div>
 
-            <article class="footer-sub">
+            <div class="footer-sub">
                 <h2>Vill du veta mer?</h2>
                 <p>Ta del av våra nyhetsbrev genom att fylla i din mailadress nedan.</p>
                 
                 <input type="email" name="Type your email" id="form-email">
-                <input type="button" value="Subscribe" id="form-button">
-            
-            </article>
-
+                <button id="form-button" type="submit" value="submit">Prenumerera</button>
+            </div>
         </section>
     </footer>
 
